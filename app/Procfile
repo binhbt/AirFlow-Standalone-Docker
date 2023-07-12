@@ -1,0 +1,3 @@
+api: gunicorn app:app --reload --workers=10 -b :5000 --timeout 900
+airflow_web: airflow webserver
+airflow_schedule: airflow scheduler
